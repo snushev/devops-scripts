@@ -1,4 +1,4 @@
 #!/bin/bash
 
-tar -czf backup_$(date +%F).tar.gz .
+tar -czf backup_$(date +%F).tar.gz backup
 
