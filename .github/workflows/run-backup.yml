@@ -1,0 +1,16 @@
+name: Run Backup Script
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  backup-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v3
+
+      - name: Start backup.sh
+        run: bash backup.sh
